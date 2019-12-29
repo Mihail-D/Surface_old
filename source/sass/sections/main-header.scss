@@ -1,0 +1,20 @@
+.main-header {
+	display: flex;
+	flex-direction: column;
+	margin: $center;
+	width: 320px;
+	height: 568px;
+	background-image: url("../img/header_bg_small_1x.png");
+	background-repeat: no-repeat;
+}
+
+.main-header__logo {
+
+	margin: $center;
+	margin-top: 39px;
+	width: 137px;
+	height: 24px;
+}
+
+
+
