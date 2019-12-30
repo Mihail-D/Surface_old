@@ -1,0 +1,52 @@
+.button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 39px;
+	box-shadow: 0 10px 16px #0a0e34;
+	background-color: #5e42b0;
+	border-radius: 20px;
+}
+
+.button--apple {
+	width: 97px;
+	padding-left: 45px;
+	&::before {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		content: url("../img/button_icon_apple.png");
+	}
+}
+.button--google {
+	width: 90px;
+	padding-left: 52px;
+	&::before {
+		position: absolute;
+		top: 10px;
+		left: 30px;
+		content: url("../img/button_icon_google.png");
+	}
+}
+
+
+.text-line-one {
+	width: 85px;
+	height: 7px;
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	font-size: 8px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+.text-line-two {
+	width: 50px;
+	height: 7px;
+	color: #ffffff;
+	font-family: "Proxima Nova Bold";
+	font-size: 8px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}

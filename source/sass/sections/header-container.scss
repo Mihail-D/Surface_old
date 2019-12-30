@@ -1,0 +1,45 @@
+.header-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-top: 134px;
+	padding: 0;
+	width: $small + 35px;
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: 60px;
+		left: 43px;
+		width: 218px;
+		height: 0;
+		border: 2px solid #463489;
+		transform: rotate(308.4deg);
+		z-index: 1;
+	}
+}
+
+.header-container__caption {
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.80px;
+	margin: 0;
+}
+
+.header-container__caption--first-line {
+	margin-top: 2px;
+	margin-left: 12px;
+	height: 23px;
+	z-index: 2;
+}
+
+.header-container__caption--second-line {
+	margin-top: 28px;
+	margin-left: 67px;
+	width: 260px;
+	z-index: 2;
+	line-height: 37px;
+}
