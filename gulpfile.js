@@ -20,6 +20,21 @@ var htmlmin = require("gulp-htmlmin");
 var include = require("posthtml-include");
 var del = require("del");
 
+gulp.task("images", function() {
+	return gulp
+		.src("source/img/**/*.{png,jpg,svg}")
+		.pipe(
+			imagemin([
+				imageminPngquant({ quality: [0.2, 0.85] }),
+				imagemin.optipng({ optimizationLevel: 5 }),
+				imagemin.jpegtran({ progressive: true }),
+				imagemin.svgo()
+			])
+		)
+		.pipe(gulp.dest("build/img"));
+});
+
+
 gulp.task("css", function() {
 	return gulp
 		.src("source/sass/style.scss")
@@ -68,21 +83,6 @@ gulp.task("refresh", function(done) {
 	server.reload();
 	done();
 });
-
-gulp.task("images", function() {
-	return gulp
-		.src("source/img/**/*.{png,jpg,svg}")
-		.pipe(
-			imagemin([
-				imageminPngquant({ quality: [0.2, 0.85] }),
-				imagemin.optipng({ optimizationLevel: 5 }),
-				imagemin.jpegtran({ progressive: true }),
-				imagemin.svgo(),
-			])
-		)
-		.pipe(gulp.dest("build/img"));
-});
-
 
 gulp.task("sprite", function() {
 	return gulp
