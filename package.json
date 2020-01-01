@@ -47,5 +47,8 @@
 	],
 	"engines": {
 		"node": "8.16"
+	},
+	"dependencies": {
+		"gulp-htmlmin": "^5.0.1"
 	}
 }
