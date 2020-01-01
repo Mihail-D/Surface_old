@@ -6,6 +6,10 @@
 	height: 568px;
 	background-image: url("../img/header_bg_small_1x.png");
 	background-repeat: no-repeat;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/header_bg_small_2x.png");
+	}
 }
 
 .main-header__logo {
@@ -14,10 +18,3 @@
 	width: 137px;
 	height: 24px;
 }
-
-
-
-
-
-
-
