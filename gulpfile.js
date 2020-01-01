@@ -138,14 +138,6 @@ gulp.task("copy", function() {
 		.pipe(gulp.dest("build"));
 });
 
-gulp.task("copy_img", function() {
-	return gulp
-		.src(["source/img/**/*.{jpg,jpeg,png,svg}"], {
-			base: "source"
-		})
-		.pipe(gulp.dest("build"));
-});
-
 gulp.task(
 	"build_project",
 	gulp.series(
