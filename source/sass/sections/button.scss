@@ -18,6 +18,7 @@
 		content: url("../img/button_icon_apple.png");
 	}
 }
+
 .button--google {
 	width: 90px;
 	padding-left: 52px;
@@ -29,24 +30,30 @@
 	}
 }
 
-
 .text-line-one {
+	margin-top: 10px;
 	width: 85px;
 	height: 7px;
 	color: #ffffff;
-	font-family: "Proxima Nova";
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif ;
 	font-size: 8px;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.4px;
 }
 .text-line-two {
+	margin-top: 4px;
 	width: 50px;
 	height: 7px;
 	color: #ffffff;
-	font-family: "Proxima Nova Bold";
+	font-family: "Proxima Nova Bold", Arial, Helvetica, sans-serif;
 	font-size: 8px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.4px;
+}
+
+.text-line-one--google,
+.text-line-two--google {
+	margin-left: 2px;
 }

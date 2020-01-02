@@ -1,0 +1,25 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: $center;
+	margin-top: 40px;
+
+}
+
+.menu--first-line {
+	width: 248px;
+}
+
+.menu--second-line {
+	margin-top: 3px;
+	width: 174px;
+}
+
+.menu__menu-item a {
+color: #9071ea;
+font-family: "Proxima Nova" , Arial, Helvetica, sans-serif ;
+font-size: 12px;
+font-weight: 300;
+text-transform: uppercase;
+}
