@@ -51,20 +51,52 @@
 
 			<nav class="main-nav">
 				<ul class="menu menu--first-line">
-					<li class="menu__menu-item menu__menu-item--footbol"><a href="#">FOOTBALL</a> </li>
-					<li class="menu__menu-item menu__menu-item--basketball"><a href="#">BASKETBALL</a></li>
-					<li class="menu__menu-item menu__menu-item--baseball"><a href="#">BASEBALL</a></li>
+					<li class="menu__menu-item menu__menu-item--footbol">
+						<a href="#">FOOTBALL</a>
+					</li>
+					<li class="menu__menu-item menu__menu-item--basketball">
+						<a href="#">BASKETBALL</a>
+					</li>
+					<li class="menu__menu-item menu__menu-item--baseball">
+						<a href="#">BASEBALL</a>
+					</li>
 				</ul>
 				<ul class="menu menu--second-line">
-					<li class="menu__menu-item menu__menu-item--soccer"><a href="#">SOCCER</a></li>
-					<li class="menu__menu-item menu__menu-item--hockey"><a href="#">ICE HOCKEY</a></li>
+					<li class="menu__menu-item menu__menu-item--soccer">
+						<a href="#">SOCCER</a>
+					</li>
+					<li class="menu__menu-item menu__menu-item--hockey">
+						<a href="#">ICE HOCKEY</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main class="main-block">
-<div class="athletes-block">
-<h2 class="captions__main-capture">ATHLETS</h2>
-</div>
+			<div class="athletes-block">
+				<h2 class="captions__main-capture">ATHLETS</h2>
+				<picture>
+					<source
+						type="image/webp"
+						media="(min-width: 1300px)"
+						srcset="img/athletes_footballer_decktop.png 1x, img/athletes_footballer_decktop@2.png 2x"
+					/>
+
+					<source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/athletes_footballer_tablet.png 1x, img/athletes_footballer_tablet@2.png 2x"
+					/>
+
+					<img
+						class="athletes-block__image"
+						src="/img/athletes_footballer_mobile.png"
+						srcset="/img/athletes_footballer_mobile@2x.png"
+						alt="footballer"
+						width="192"
+						height="281"
+					/>
+				</picture>
+			</div>
 		</main>
 		<footer class="main-footer"></footer>
 		<script src="js/script.js"></script>
