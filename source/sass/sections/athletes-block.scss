@@ -7,7 +7,7 @@
 	width: 100%;
 	min-height: 587px;
 	background: linear-gradient(#fff 52.3%, #f5f4f9 47.7%);
-	z-index: -2;
+	z-index: 1;
 	&::before {
 		position: absolute;
 		content: "";
@@ -27,4 +27,5 @@
 	margin-left: 70px;
 	width: 198px;
 	height: 281px;
+
 }

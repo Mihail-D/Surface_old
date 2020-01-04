@@ -72,19 +72,26 @@
 			</nav>
 		</header>
 		<main class="main-block">
+
 			<div class="athletes-block">
 				<h2 class="captions__main-capture">ATHLETS</h2>
 				<picture>
 					<source
 						type="image/webp"
 						media="(min-width: 1300px)"
-						srcset="img/athletes_footballer_decktop.png 1x, img/athletes_footballer_decktop@2.png 2x"
+						srcset="
+							img/athletes_footballer_decktop.png   1x,
+							img/athletes_footballer_decktop@2.png 2x
+						"
 					/>
 
 					<source
 						type="image/webp"
 						media="(min-width: 768px)"
-						srcset="img/athletes_footballer_tablet.png 1x, img/athletes_footballer_tablet@2.png 2x"
+						srcset="
+							img/athletes_footballer_tablet.png   1x,
+							img/athletes_footballer_tablet@2.png 2x
+						"
 					/>
 
 					<img
@@ -98,7 +105,65 @@
 				</picture>
 
 				<h3 class="captions__extra-capture">Collaboration</h3>
+
+				<!-- ===================== SLIDER =========================================================== -->
+
+				<div class="slider">
+
+					<div class="slide slide-1">
+						<p class="slide__description">
+							Work with other student athletes to  increase visability. When you
+							share and like other players videos it will increase your
+							visability as a player. This is the team work aspect to Surface 1.
+						</p>
+					</div>
+
+					<div class="slide slide-2 visually-hidden">
+						<p class="slide__description">
+							In vestibulum, lectus vitae vulputate maximus, magna quam lacinia
+							nulla, nec maximus orci diam id nibh. Quisque consequat a felis
+							vitae tincidunt.
+						</p>
+					</div>
+
+					<div class="slide slide-3 visually-hidden">
+						<p class="slide__description">
+							Integer in ex sit amet nisi mollis blandit. Duis pellentesque
+							dictum pretium. Phasellus non malesuada lectus, eu luctus nisi.
+							Vivamus eget magna eget nulla euismod fringilla id in urna.
+						</p>
+					</div>
+					<div class="radio-input-wrapper">
+						<label class="container">
+							<input
+								class="slider-button slider-button__1"
+								type="radio"
+								checked="checked"
+								name="radio"
+							/>
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">
+							<input
+								class="slider-button slider-button__2"
+								type="radio"
+								name="radio"
+							/>
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">
+							<input
+								class="slider-button slider-button__3"
+								type="radio"
+								name="radio"
+							/>
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
 			</div>
+
+
 		</main>
 		<footer class="main-footer"></footer>
 		<script src="js/script.js"></script>

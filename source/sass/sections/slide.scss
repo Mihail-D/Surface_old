@@ -1,0 +1,18 @@
+.slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.slide__description {
+	margin: 0;
+	width: 280px;
+	height: 86px;
+	color: #000000;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.75px;
+}
