@@ -1,9 +1,9 @@
 .captions__main-capture {
 	position: relative;
-	width: 210px;
+	width: auto;
 	height: 36px;
 	color: #e7e7e7;
-	margin-top: 17px;
+	margin-top: 15px;
 	margin-left: 22px;
 	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 	font-size: 50px;
@@ -72,5 +72,17 @@
 		height: 4px;
 		border-radius: 2px;
 		background-color: #5e42b0;
+	}
+}
+
+.captions__main-capture--players {
+	margin-top: 26px;
+	width: 208px;
+}
+
+.captions__extra-capture--players {
+	margin-top: 40px;
+	&::after {
+		content: "03";
 	}
 }

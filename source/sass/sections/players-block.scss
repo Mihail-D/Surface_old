@@ -1,0 +1,40 @@
+.players-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 587px;
+	background: linear-gradient(#fff 52.3%, #f5f4f9 47.7%);
+	z-index: 1;
+
+		&::before {
+		position: absolute;
+		content: "";
+		top: 253px;
+		left: 15px;
+		width: 202px;
+		height: 0;
+		border: 2px solid #463489;
+		transform: rotate(311deg);
+		z-index: -1;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		top: 165px;
+		left: 178px;
+		width: 118px;
+		height: 0;
+		border: 2px solid #463489;
+		transform: rotate(310deg);
+		z-index: -1;
+	}
+
+}
+
+.players-block__image {
+	margin-top: -9px;
+	margin-left: 4px;
+}
