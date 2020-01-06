@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
-var buttonOne = document.querySelector(".slider-button__1");
-var buttonTwo = document.querySelector(".slider-button__2");
-var buttonThree = document.querySelector(".slider-button__3");
-var buttons = document.querySelectorAll(".slider-button");
+var athletesButtonOne = document.querySelector(".athletes-slider-button__1");
+var athletesButtonTwo = document.querySelector(".athletes-slider-button__2");
+var athletesButtonThree = document.querySelector(".athletes-slider-button__3");
+var athletesButtons = document.querySelectorAll(".athletes-slider-button");
 
-var slideOne = document.querySelector(".slide-1");
-var slideTwo = document.querySelector(".slide-2");
-var slideThree = document.querySelector(".slide-3");
-var sliders = document.querySelectorAll(".slide");
+var athletesSlideOne = document.querySelector(".athletes-slide-1");
+var athletesSlideTwo = document.querySelector(".athletes-slide-2");
+var athletesSlideThree = document.querySelector(".athletes-slide-3");
+var athletesSliders = document.querySelectorAll(".athletes-slide");
 
-buttonOne.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonOne) {
-			for (var i of sliders) {
-				if (i === slideOne) {
+athletesButtonOne.addEventListener("change", function(evt) {
+	for (var button = 0; button < athletesButtons.length; button++) {
+		if (athletesButtons[button] === athletesButtonOne) {
+			for (var i of athletesSliders) {
+				if (i === athletesSlideOne) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");
@@ -25,11 +25,11 @@ buttonOne.addEventListener("change", function(evt) {
 	}
 });
 
-buttonTwo.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonTwo) {
-			for (var i of sliders) {
-				if (i === slideTwo) {
+athletesButtonTwo.addEventListener("change", function(evt) {
+	for (var button = 0; button < athletesButtons.length; button++) {
+		if (athletesButtons[button] === athletesButtonTwo) {
+			for (var i of athletesSliders) {
+				if (i === athletesSlideTwo) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");
@@ -39,11 +39,11 @@ buttonTwo.addEventListener("change", function(evt) {
 	}
 });
 
-buttonThree.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonThree) {
-			for (var i of sliders) {
-				if (i === slideThree) {
+athletesButtonThree.addEventListener("change", function(evt) {
+	for (var button = 0; button < athletesButtons.length; button++) {
+		if (athletesButtons[button] === athletesButtonThree) {
+			for (var i of athletesSliders) {
+				if (i === athletesSlideThree) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");

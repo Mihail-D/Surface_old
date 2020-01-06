@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
-var buttonOne = document.querySelector(".slider-button__1");
-var buttonTwo = document.querySelector(".slider-button__2");
-var buttonThree = document.querySelector(".slider-button__3");
-var buttons = document.querySelectorAll(".slider-button");
+var playersButtonOne = document.querySelector(".players-slider-button__1");
+var playersButtonTwo = document.querySelector(".players-slider-button__2");
+var playersButtonThree = document.querySelector(".players-slider-button__3");
+var playersButtons = document.querySelectorAll(".players-slider-button");
 
-var slideOne = document.querySelector(".slide-1");
-var slideTwo = document.querySelector(".slide-2");
-var slideThree = document.querySelector(".slide-3");
-var sliders = document.querySelectorAll(".slide");
+var playersSlideOne = document.querySelector(".players-slide-1");
+var playersSlideTwo = document.querySelector(".players-slide-2");
+var playersSlideThree = document.querySelector(".players-slide-3");
+var playersSliders = document.querySelectorAll(".players-slide");
 
-buttonOne.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonOne) {
-			for (var i of sliders) {
-				if (i === slideOne) {
+playersButtonOne.addEventListener("change", function(evt) {
+	for (var button = 0; button < playersButtons.length; button++) {
+		if (playersButtons[button] === playersButtonOne) {
+			for (var i of playersSliders) {
+				if (i === playersSlideOne) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");
@@ -25,11 +25,11 @@ buttonOne.addEventListener("change", function(evt) {
 	}
 });
 
-buttonTwo.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonTwo) {
-			for (var i of sliders) {
-				if (i === slideTwo) {
+playersButtonTwo.addEventListener("change", function(evt) {
+	for (var button = 0; button < playersButtons.length; button++) {
+		if (playersButtons[button] === playersButtonTwo) {
+			for (var i of playersSliders) {
+				if (i === playersSlideTwo) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");
@@ -39,11 +39,11 @@ buttonTwo.addEventListener("change", function(evt) {
 	}
 });
 
-buttonThree.addEventListener("change", function(evt) {
-	for (var button = 0; button < buttons.length; button++) {
-		if (buttons[button] === buttonThree) {
-			for (var i of sliders) {
-				if (i === slideThree) {
+playersButtonThree.addEventListener("change", function(evt) {
+	for (var button = 0; button < playersButtons.length; button++) {
+		if (playersButtons[button] === playersButtonThree) {
+			for (var i of playersSliders) {
+				if (i === playersSlideThree) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
 					i.classList.toggle("visually-hidden");

@@ -7,7 +7,12 @@
 	margin-left: 21px;
 }
 
-.container {
+.radio-input-wrapper--players {
+	margin-top: 0;
+}
+
+.players-container,
+.athletes-container {
 	display: flex;
 	position: relative;
 	margin-bottom: 12px;
@@ -18,37 +23,43 @@
 	user-select: none;
 }
 
-.container input {
+.players-container input,
+.athletes-container input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
 }
 
-.checkmark {
+.players-checkmark,
+.athletes-checkmark {
 	position: absolute;
 	top: 10px;
 	left: -17px;
 	height: 9px;
 	width: 9px;
-	background-color: #fff;
+	background-color: #d8d8d8;
 	border-radius: 50%;
-	border: 1px solid #2b3746;
+	border: 1px solid #d8d8d8;
 }
 
-.container:hover input ~ .checkmark {
-	background-color: #ccc;
+.players-container:hover input ~ .players-checkmark,
+.athletes-container:hover input ~ .athletes-checkmark {
+	background-color: #d8d8d8;
 }
 
-.container input:checked ~ .checkmark {
-	background-color: #2b3746;
+.players-container input:checked ~ .players-checkmark,
+.athletes-container input:checked ~ .athletes-checkmark {
+	background-color: #5c3caf;
 }
 
-.checkmark:after {
+.players-checkmark:after,
+.athletes-checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.players-container input:checked ~ .players-checkmark:after,
+.athletes-container input:checked ~ .athletes-checkmark:after {
 	display: block;
 }
