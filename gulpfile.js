@@ -31,7 +31,7 @@ gulp.task("images", function() {
 		.pipe(
 			gulpImagemin([
 				imageminPngquant({ quality: [0.65, 0.8] }),
-				gulpImagemin.optipng({ optimizationLevel: 5 }),
+				gulpImagemin.optipng({ optimizationLevel: 3 }),
 				gulpImagemin.jpegtran({ progressive: true }),
 				gulpImagemin.svgo({
 					plugins: [{ removeViewBox: true }, { cleanupIDs: false }]

@@ -14,7 +14,7 @@ var athletesSliders = document.querySelectorAll(".athletes-slide");
 athletesButtonOne.addEventListener("change", function(evt) {
 	for (var button = 0; button < athletesButtons.length; button++) {
 		if (athletesButtons[button] === athletesButtonOne) {
-			for (var i of athletesSliders) {
+			for (let i of athletesSliders) {
 				if (i === athletesSlideOne) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
