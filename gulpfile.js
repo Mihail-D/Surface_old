@@ -8,7 +8,7 @@ var plumber = require("gulp-plumber");
 var rename = require("gulp-rename");
 var del = require("del");
 
-var jsmin = require("gulp-uglify");
+const terser = require("gulp-terser");
 
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -122,7 +122,7 @@ gulp.task("html", function() {
 gulp.task("jsmin", function() {
 	return gulp
 		.src("build/js/*.js")
-		.pipe(jsmin())
+		.pipe(terser())
 		.pipe(gulp.dest("build/js"));
 });
 

@@ -14,7 +14,7 @@ var playersSliders = document.querySelectorAll(".players-slide");
 playersButtonOne.addEventListener("change", function(evt) {
 	for (var button = 0; button < playersButtons.length; button++) {
 		if (playersButtons[button] === playersButtonOne) {
-			for (var i of playersSliders) {
+			for (let i of playersSliders) {
 				if (i === playersSlideOne) {
 					i.classList.toggle("visually-hidden");
 				} else if (i.classList.contains("visually-hidden") === false) {
