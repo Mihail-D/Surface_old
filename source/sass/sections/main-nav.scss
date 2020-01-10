@@ -1,6 +1,17 @@
 .main-nav {
 	display: flex;
 	flex-direction: column;
+}
 
-
+//========== @media  tablet =======================
+@media (min-width: $middle) {
+	.main-nav {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 150px;
+		margin-right: auto;
+		margin-left: 50px;
+		width: auto;
+	}
 }

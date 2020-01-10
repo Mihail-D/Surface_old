@@ -58,3 +58,14 @@
 	width: 85px;
 	margin-left: 2px;
 }
+
+@media (min-width: $middle) {
+.button {
+	width: 211px;
+	height: 77px;
+	box-shadow: 8px 14px 24px #0a0e34;
+	background-color: #5e42b0;
+
+}
+
+}

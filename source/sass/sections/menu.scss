@@ -4,7 +4,6 @@
 	padding: 0;
 	margin: $center;
 	margin-top: 40px;
-
 }
 
 .menu--first-line {
@@ -17,9 +16,43 @@
 }
 
 .menu__menu-item a {
-color: #9071ea;
-font-family: "Proxima Nova" , Arial, Helvetica, sans-serif ;
-font-size: 12px;
-font-weight: 300;
-text-transform: uppercase;
+	color: #9071ea;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+@media (min-width: $middle) {
+	.menu {
+		margin: 0;
+		margin-top: 38px;
+	}
+	.menu--first-line {
+		display: flex;
+		justify-content: space-between;
+		width: 380px;
+	}
+
+	.menu--second-line {
+		display: flex;
+		justify-content: space-between;
+		width: 228px;
+		margin-left: 60px;
+	}
+
+	.menu__menu-item a {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 34.49px;
+		letter-spacing: 0.8px;
+	}
+
+	.menu__menu-item--basketball {
+		margin-left: 34px;
+	}
+
+	.menu__menu-item--baseball {
+		margin-left: 33px;
+	}
 }

@@ -8,7 +8,7 @@
 
 	&::after {
 		position: absolute;
-		content: '';
+		content: "";
 		top: 60px;
 		left: 43px;
 		width: 218px;
@@ -21,11 +21,11 @@
 
 .header-container__caption {
 	color: #ffffff;
-	font-family: "Proxima Nova", Arial, Helvetica, sans-serif ;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 	font-size: 32px;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 1.80px;
+	letter-spacing: 1.8px;
 	margin: 0;
 }
 
@@ -42,4 +42,46 @@
 	width: 260px;
 	z-index: 2;
 	line-height: 37px;
+}
+
+@media (min-width: $middle) {
+	.header-container {
+		margin-top: 190px;
+		padding: 0;
+		width: 100%;
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 105px;
+			left: 189px;
+			width: 390px;
+			height: 0;
+			border: 3px solid #463489;
+			transform: rotate(308.4deg);
+			z-index: 1;
+		}
+	}
+
+	.header-container__caption {
+		font-size: 64px;
+		line-height: 31.32px;
+		letter-spacing: 3.52px;
+	}
+
+	.header-container__caption--first-line {
+		margin-top: 12px;
+		margin-left: 85px;
+		height: 23px;
+		letter-spacing: 4.6px;
+	}
+
+	.header-container__caption--second-line {
+		margin-top: 32px;
+		margin-left: 197px;
+		width: 500px;
+		height: 122px;
+		line-height: 77px;
+		letter-spacing: 3.7px;
+	}
 }

@@ -14,13 +14,17 @@
 	<body>
 		<h1 class="visually-hidden">Surface1 project for in sport recruitment</h1>
 		<header class="main-header">
-			<img
-				class="main-header__logo"
-				src="img/header_logo.svg"
-				alt="logo"
-				width="137"
-				height="24"
-			/>
+			<div class="main-header__wrapper">
+				<img
+					class="main-header__logo"
+					src="img/header_logo.svg"
+					alt="logo"
+					width="137"
+					height="24"
+				/>
+
+				<span class="main-header__description">for athlets and coaches</span>
+			</div>
 			<div class="header-container">
 				<h2
 					class="header-container__caption header-container__caption--first-line"
@@ -33,46 +37,49 @@
 					PLAY COLLEGE SPORTS
 				</h2>
 			</div>
-			<div class="buttons-block">
-				<a class="button button--apple" href="#">
-					<span class="text-line-one text-line-one--apple"
-						>download on the</span
+
+			<div class="main-header__basement-wrapper">
+				<div class="buttons-block">
+					<a class="button button--apple" href="#">
+						<span class="text-line-one text-line-one--apple"
+							>download on the</span
+						>
+						<span class="text-line-two text-line-two--apple">app store</span>
+					</a>
+
+					<a class="button button--google" href="#">
+						<span class="text-line-one text-line-one--google">get it on</span>
+						<span class="text-line-two text-line-two--google"
+							>google play</span
+						></a
 					>
-					<span class="text-line-two text-line-two--apple">app store</span>
-				</a>
+				</div>
 
-				<a class="button button--google" href="#">
-					<span class="text-line-one text-line-one--google">get it on</span>
-					<span class="text-line-two text-line-two--google"
-						>google play</span
-					></a
-				>
+				<nav class="main-nav">
+					<ul class="menu menu--first-line">
+						<li class="menu__menu-item menu__menu-item--footbol">
+							<a href="#">FOOTBALL</a>
+						</li>
+						<li class="menu__menu-item menu__menu-item--basketball">
+							<a href="#">BASKETBALL</a>
+						</li>
+						<li class="menu__menu-item menu__menu-item--baseball">
+							<a href="#">BASEBALL</a>
+						</li>
+					</ul>
+					<ul class="menu menu--second-line">
+						<li class="menu__menu-item menu__menu-item--soccer">
+							<a href="#">SOCCER</a>
+						</li>
+						<li class="menu__menu-item menu__menu-item--hockey">
+							<a href="#">ICE HOCKEY</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-
-			<nav class="main-nav">
-				<ul class="menu menu--first-line">
-					<li class="menu__menu-item menu__menu-item--footbol">
-						<a href="#">FOOTBALL</a>
-					</li>
-					<li class="menu__menu-item menu__menu-item--basketball">
-						<a href="#">BASKETBALL</a>
-					</li>
-					<li class="menu__menu-item menu__menu-item--baseball">
-						<a href="#">BASEBALL</a>
-					</li>
-				</ul>
-				<ul class="menu menu--second-line">
-					<li class="menu__menu-item menu__menu-item--soccer">
-						<a href="#">SOCCER</a>
-					</li>
-					<li class="menu__menu-item menu__menu-item--hockey">
-						<a href="#">ICE HOCKEY</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
+
 		<main class="main-block">
-			<!-- START athletes-block -->
 			<div class="athletes-block">
 				<h2 class="captions__main-capture">ATHLETS</h2>
 				<picture>
@@ -160,9 +167,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- END athletes-block -->
 
-			<!-- START  -->
 			<div class="players-block">
 				<h3 class="captions__main-capture captions__main-capture--players">
 					players
