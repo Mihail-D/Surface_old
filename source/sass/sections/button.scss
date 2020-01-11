@@ -9,24 +9,28 @@
 }
 
 .button--apple {
-	width: 97px;
+	padding-right: 11px;
 	padding-left: 45px;
 	&::before {
 		position: absolute;
 		top: 10px;
 		left: 20px;
-		content: url("../img/button_icon_apple.png");
+		width: 15px;
+		height: 17px;
+		content: url("../img/button_icon_apple.svg");
 	}
 }
 
 .button--google {
-	width: 90px;
-	padding-left: 52px;
+	padding-right: 5px;
+	padding-left: 34px;
 	&::before {
 		position: absolute;
 		top: 10px;
-		left: 30px;
-		content: url("../img/button_icon_google.png");
+		left: 28px;
+		width: 16px;
+		height: 18px;
+		content: url("../img/button_icon_google.svg");
 	}
 }
 
@@ -35,7 +39,7 @@
 	width: 85px;
 	height: 7px;
 	color: #ffffff;
-	font-family: "Proxima Nova", Arial, Helvetica, sans-serif ;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 	font-size: 8px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -56,16 +60,65 @@
 .text-line-one--google,
 .text-line-two--google {
 	width: 85px;
-	margin-left: 2px;
+	margin-left: 18px;
 }
 
 @media (min-width: $middle) {
-.button {
-	width: 211px;
-	height: 77px;
-	box-shadow: 8px 14px 24px #0a0e34;
-	background-color: #5e42b0;
+	.button {
+		margin-top: -6px;
+		box-shadow: 8px 14px 24px #0a0e34;
+		background-color: #5e42b0;
+		border-radius: 50px;
+	}
 
-}
+	.button--apple {
+		padding: 15px 61px 24px 105px;
 
+		&::before {
+			position: absolute;
+			top: 16px;
+			left: 43px;
+			width: 33px;
+			height: 37px;
+			content: url("../img/button_icon_apple.svg");
+		}
+	}
+
+	.button--google {
+		padding: 15px 40px 24px 125px;
+		&::before {
+			position: absolute;
+			top: 19px;
+			left: 63px;
+			width: 36px;
+			height: 39px;
+			content: url("../img/button_icon_google.svg");
+		}
+	}
+
+	.text-line-one {
+		margin-top: 10px;
+		width: 145px;
+		height: 11px;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+	}
+	.text-line-two {
+		margin-top: 4px;
+		width: 145px;
+		height: 11px;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+	}
+
+	.text-line-one--google,
+	.text-line-two--google {
+		margin-left: 2px;
+	}
 }
