@@ -11,30 +11,22 @@
 
 		&::before {
 		position: absolute;
-		content: "";
-		top: 253px;
-		left: 15px;
-		width: 202px;
-		height: 0;
-		border: 2px solid #463489;
-		transform: rotate(311deg);
-		z-index: -1;
+		content: url("/img/players_mobile.png");
+		top: 103px;
+		left: 3px;
+		width: 192px;
+		height: 281px;
 	}
-	&::after {
-		position: absolute;
-		content: "";
-		top: 165px;
-		left: 178px;
-		width: 118px;
-		height: 0;
-		border: 2px solid #463489;
-		transform: rotate(310deg);
-		z-index: -1;
-	}
+
 
 }
 
-.players-block__image {
-	margin-top: -9px;
-	margin-left: 4px;
+//========== @media  tablet =======================
+@media (min-width: $middle) {
+.players-block {
+			&::before {
+		content: url("/img/players_mobile@2.png");
+	}
+}
+
 }

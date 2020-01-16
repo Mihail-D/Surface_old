@@ -2,5 +2,11 @@
 	width: 320px;
 	min-height: 300px;
 	margin: $center;
-	
+}
+
+//========== @media  tablet =======================
+@media (min-width: $middle) {
+	.main-block {
+		width: 768px;
+	}
 }

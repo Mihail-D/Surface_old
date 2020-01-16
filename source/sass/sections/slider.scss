@@ -7,3 +7,11 @@
 }
 
 
+//========== @media  tablet =======================
+@media (min-width: $middle) {
+.athletes-slider,
+.players-slider {
+	display: none;
+}
+
+}
