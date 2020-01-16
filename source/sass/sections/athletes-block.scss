@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: $center;
 	width: 320px;
-	min-height: 588px;
+
 	background: linear-gradient(#fff 52.3%, #f5f4f9 47.7%);
 	z-index: 1;
 
@@ -21,34 +21,50 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 	.athletes-block {
-	&::before {
-		content: url("/img/athlets_mobile@2.png");
+		&::before {
+			content: url("/img/athlets_mobile@2.png");
+		}
 	}
-	}
+}
+
+.athletes-block__connection {
+
+}
+
+.athletes-block__collaboration {
+height: 225px;
+}
+
+.athletes-block__growth {
+	display: none;
 }
 
 //========== @media  tablet =======================
 @media (min-width: $middle) {
 	.athletes-block {
+		justify-content: space-between;
 		width: 768px;
-		&::after {
+		height: 788px;
+
+		&::before {
 			position: absolute;
-			content: url("../img/athletes_footballer_tablet.webp");
-
-
+			content: url("../img/athlets_tablet.webp");
 			top: 93px;
-			left: -162px;
+			left: 0;
 		}
 	}
 
 	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-	.athletes-block {
-		background-image: url("../img/athletes_footballer_mobile@2x.webp");
+		.athletes-block {
+			background-image: url("../img/athlets_tablet@2x.webp");
+		}
 	}
-}
 
-	.athletes-block__image {
-		width: 497px;
-		height: 699px;
+	.athletes-block__growth {
+		display: flex;
+		width: auto;
+		height: 202px;
+		background: #5e42b0;
 	}
+
 }
