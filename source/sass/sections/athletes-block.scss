@@ -1,75 +1,41 @@
-// .athletes-block {
-// 	position: relative;
-// 	display: flex;
-// 	flex-direction: column;
-// 	padding: 0;
-// 	margin: $center;
-// 	width: 320px;
+.athletes-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
 
-// 	background: linear-gradient(#fff 52.3%, #f5f4f9 47.7%);
-// 	z-index: 1;
-
-// 	&::before {
-// 		position: absolute;
-// 		content: url("/img/athletes_mobile.png");
-// 		top: 80px;
-// 		left: 65px;
-// 		width: 192px;
-// 		height: 281px;
-// 	}
-// }
-
-// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-// 	.athletes-block {
-// 		&::before {
-// 			content: url("/img/athletes_mobile@2.png");
-// 		}
-// 	}
-// }
-
-// .athletes-block__collaboration {
-// 	height: 225px;
-// }
-
-// .athletes-block__growth {
-// 	display: none;
-// }
-
-//========== @media  tablet =======================
-@media (min-width: $middle) {
-	.athletes-block {
-		display: flex;
-		flex-direction: column;
-
-		width: 768px;
-		background: #fff;
+	&::before {
+		position: absolute;
+		top: 93px;
+		left: 0;
+		content: url('../img/athletes_tablet.webp');
 	}
 
+}
 
-	.athletes-block__connection {
-		display: flex;
+ @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .athletes-block {
+			&::before {
+				content: url("../img/athletes_tablet@2.webp");
+			}
+    }
+  }
 
-		position: relative;
-		height: 350px;
-		&::before {
-			position: absolute;
-			content: url("../img/athletes_tablet.webp");
-			top: 92px;
-			left: 0;
-		}
+.athletes-block__connection {
+	display: flex;
+	flex-direction: column;
+	height: 230px;
+}
 
-	}
+.athletes-block__collaboration {
+	display: flex;
+	flex-direction: column;
+	height: 230px;
+	background-color: #f5f4f9;
+}
 
-	.athletes-block__collaboration {
-
-		background: #f5f4f9;
-		height: 236px;
-	}
-
-	.athletes-block__growth {
-
-		width: auto;
-		height: 205px;
-		background: #5e42b0;
-	}
+.athletes-block__growth {
+	display: flex;
+	flex-direction: column;
+	height: 205px;
+	background-color: #5e42b0;
 }

@@ -2,33 +2,40 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	min-height: 555px;
-	background: linear-gradient(#fff 52.3%, #f5f4f9 47.7%);
-	z-index: 1;
 
-		&::before {
+	&::before {
 		position: absolute;
-		content: url("/img/players_mobile.png");
-		top: 103px;
-		left: 3px;
-		width: 192px;
-		height: 281px;
+		top: 37px;
+		right: 0;
+		content: url('../img/players_tablet.webp');
 	}
+
 }
 
-.players-block__collaboration {
-	display: none;
-}
-
-//========== @media  tablet =======================
-@media (min-width: $middle) {
-.players-block {
+ @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .athletes-block {
 			&::before {
-		content: url("/img/players_mobile@2.png");
-	}
+				content: url("../img/players_tablet@2.webp");
+			}
+    }
+  }
+
+.athletes-block__connection {
+	display: flex;
+	flex-direction: column;
+	height: 230px;
 }
 
+.athletes-block__collaboration {
+	display: flex;
+	flex-direction: column;
+	height: 230px;
+	background-color: #f5f4f9;
+}
+
+.athletes-block__growth {
+	display: flex;
+	flex-direction: column;
+	height: 205px;
+	background-color: #5e42b0;
 }

@@ -89,7 +89,7 @@
 		color: #e7e7e7;
 		margin-top: 64px;
 		margin-left: 297px;
-
+		margin-bottom: 0;
 		font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 		width: 377px;
 		height: 63px;
@@ -101,7 +101,7 @@
 		&::after {
 			position: absolute;
 			content: "";
-			top: 5px;
+			top: 25px;
 			left: -247px;
 			width: 16px;
 			height: 3px;
@@ -111,7 +111,7 @@
 		&::before {
 			position: absolute;
 			content: "";
-			top: 5px;
+			top: 25px;
 			left: -247px;
 			width: 16px;
 			height: 3px;
@@ -122,54 +122,85 @@
 	}
 
 
-.captions__extra-capture {
-	position: relative;
-	margin-top: 0;
-	margin-left: 0;
-	width: 245px;
-	height: 20px;
-	color: #c1c1c1;
-	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
-	font-size: 34px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1.9px;
 
-	&::after {
-		position: absolute;
-		content: "";
-		top: 5px;
-		left: -28px;
 
-		width: 18px;
-		height: 11px;
+
+	
+	.captions__extra-capture {
+		position: relative;
+		margin-top: 70px;
+		margin-left: 320px;
+		width: 245px;
+		height: 20px;
+		color: #c1c1c1;
+		font-family: "Proxima Nova Bold", Arial, Helvetica, sans-serif;
+		font-size: 35px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 5px;
+			left: -28px;
+
+			width: 18px;
+			height: 11px;
+			color: #000000;
+			font-family: "Proxima Nova Bold", Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.7px;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 25px;
+			left: -27px;
+
+			width: 17px;
+			height: 4px;
+			border-radius: 2px;
+			background-color: #5e42b0;
+		}
+	}
+
+	.captions__extra-capture--connection {
+		&::after {
+			content: "01";
+		}
+	}
+
+	.captions__extra-capture--collaboration {
+		margin-top: 30px;
+		&::after {
+			content: "02";
+		}
+	}
+
+	.captions__extra-capture--growth {
+		margin-top: 30px;
+		&::after {
+			content: "03";
+		}
+		&::before {
+			background-color: #efefef;
+		}
+	}
+
+	.captions__slogan {
+		margin-top: 0;
+		margin-left: 280px;
+		width: 450px;
+		height: 16px;
 		color: #000000;
 		font-family: "Proxima Nova Bold", Arial, Helvetica, sans-serif;
 		font-size: 18px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.7px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0.9px;
+		text-align: center;
 	}
-
-	&::before {
-		position: absolute;
-		content: "";
-		top: 25px;
-		left: -27px;
-
-		width: 17px;
-		height: 4px;
-		border-radius: 2px;
-		background-color: #5e42b0;
-	}
-}
-
-.captions__extra-capture--connection {
-	&::after {
-		content: "01";
-	}
-}
-
-
-
 }
