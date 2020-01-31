@@ -13,27 +13,27 @@
 }
 
  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .athletes-block {
+    .players-block {
 			&::before {
 				content: url("../img/players_tablet@2.webp");
 			}
     }
   }
 
-.athletes-block__connection {
+.players-block__connection {
 	display: flex;
 	flex-direction: column;
 	height: 230px;
 }
 
-.athletes-block__collaboration {
+.players-block__collaboration {
 	display: flex;
 	flex-direction: column;
 	height: 230px;
 	background-color: #f5f4f9;
 }
 
-.athletes-block__growth {
+.players-block__growth {
 	display: flex;
 	flex-direction: column;
 	height: 205px;

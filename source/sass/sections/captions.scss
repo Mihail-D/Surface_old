@@ -87,15 +87,12 @@
 	.captions__main-capture {
 		position: relative;
 		color: #e7e7e7;
-		margin-top: 64px;
-		margin-left: 297px;
 		margin-bottom: 0;
 		font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 		width: 377px;
 		height: 63px;
 		font-size: 90px;
 		font-weight: 700;
-
 		text-transform: uppercase;
 
 		&::after {
@@ -121,15 +118,39 @@
 		}
 	}
 
+	.captions__main-capture--athletes {
+		margin-top: 64px;
+		margin-left: 297px;
 
+		&::after {
+			top: 25px;
+			left: -247px;
+		}
+		&::before {
+			top: 25px;
+			left: -247px;
+		}
+	}
 
+	.captions__main-capture--players {
+		margin-top: 64px;
+		margin-left: 40px;
 
+		&::after {
+			top: 47px;
+			left: 492px;
+			box-shadow: 22px 16px 0 #ded5f7;
+		}
+		&::before {
+			top: 47px;
+			left: 492px;
+			box-shadow: 16px -22px 0 #ded5f7;
+		}
+	}
 
-	
 	.captions__extra-capture {
 		position: relative;
-		margin-top: 70px;
-		margin-left: 320px;
+
 		width: 245px;
 		height: 20px;
 		color: #c1c1c1;
@@ -166,6 +187,17 @@
 			background-color: #5e42b0;
 		}
 	}
+
+.captions__extra-capture--connection-athletes {
+margin-top: 70px;
+		margin-left: 320px;
+}
+
+.captions__extra-capture--connection-player {
+
+}
+
+
 
 	.captions__extra-capture--connection {
 		&::after {
